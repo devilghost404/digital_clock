@@ -54,6 +54,7 @@ body{
 }
 
 #time div span{
+    margin-top: 0.7rem;
     position: absolute;
     transform: translateY(-10px);
     font-size: 0.25em;
@@ -64,7 +65,7 @@ body{
 }
 #time .ap{
     position: relative;
-    font: 1em;
+    font-size: 1em;
     transform: translateX(-20px);
 }
 
@@ -87,4 +88,25 @@ body{
     border-radius: 50%;
     box-shadow: 0 0 20px var(--clr), 0 0 60px var(--clr);
 
+}
+
+@media screen and (max-width:768px) {
+    #time{
+        position: relative;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 1.5rem;
+    }
+    #time .ap{
+        position: absolute;
+        top: 0;
+        left:50%;
+        transform: translateX(-50%);
+    }
+    #ampm{
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform:translate(-50%,-100%);
+    }
 }
